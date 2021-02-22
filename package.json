@@ -1,6 +1,6 @@
 {
   "name": "@transomjs/transom-scheduler",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A Transom job scheduler that emits events rather than processes the jobs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url":"git+https://github.com/transomjs/transom-scheduler.git"
+    "url": "git+https://github.com/transomjs/transom-scheduler.git"
   },
   "bugs": {
     "url": "https://github.com/transomjs/transom-scheduler/issues"
