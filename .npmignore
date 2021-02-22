@@ -1,0 +1,15 @@
+.editorconfig
+.travis.yml
+docs
+History.md
+Makefile
+test
+.vscode
+src
+create_db.sql
+docker-compose.yml
+tsconfig.json
+typedoc.json
+.eslintrc.js
+tobuilder.sh
+

@@ -53,3 +53,5 @@ function setupListeners(server){
     });
 ```
 
+# Need Support?
+Transom Scheduler is developed and maintained by [BinaryOps Software Inc.](https://binaryops.ca) in Canada.

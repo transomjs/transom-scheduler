@@ -1,0 +1,54 @@
+{
+  "name": "@transomjs/transom-scheduler",
+  "version": "0.5.1",
+  "description": "A Transom job scheduler that emits events rather than processes the jobs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "mocha -r ts-node/register ./test/**/*.spec.ts --no-timeouts",
+    "predeploy": "npm run build",
+    "build": "tsc",
+    "cpbuild": "npm run build && npm run tobuilder",
+    "tobuilder": "./tobuilder.sh",
+    "deploy": "np",
+    "docs": "typedoc",
+    "lint": "eslint ./src --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url":"git+https://github.com/transomjs/transom-scheduler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/transomjs/transom-scheduler/issues"
+  },
+  "keywords": [
+    "transom",
+    "TransomJS",
+    "job",
+    "scheduler",
+    "event"
+  ],
+  "author": "Wiebo Troost (BinaryOps.ca)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/debug": "^4.1.5",
+    "@types/expect.js": "^0.3.29",
+    "@types/mocha": "^8.2.0",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "eslint": "^7.20.0",
+    "eslint-plugin-tsdoc": "^0.2.11",
+    "expect.js": "^0.3.1",
+    "mocha": "^8.3.0",
+    "mysql2": "^2.2.5",
+    "np": "^7.4.0",
+    "sequelize": "^6.5.0",
+    "ts-node": "^9.1.1",
+    "typedoc": "^0.20.24",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "debug": "^4.3.1",
+    "simple-event-scheduler": "^1.0.4"
+  }
+}
