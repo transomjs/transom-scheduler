@@ -3,6 +3,28 @@
 A Transom Plugin wrapper around the Simple Event Scheduler. A convenient way to add the 
 functionality of the [Simple Event Scheduler](https://www.npmjs.com/package/simple-event-scheduler) to the [TransomJS](https://transomjs.github.io/) Landscape.
 
+## Gettings started
+You can install the scheduler with npm: `npm install @transomjs/transom-scheduler`.
+
+You'll need to have a database table available for the scheduler to persist the configured jobs.
+Here is a sample table:
+```
+CREATE TABLE `job` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `channel` varchar(255) NOT NULL,
+  `active` int NOT NULL,
+  `cronexp` varchar(255) NULL,
+  `nextRunAt` datetime NULL,
+  `intervalSeconds` int NULL,
+  `lastRunTime`bigint NOT NULL,
+  `startDate` datetime NULL,
+  `endDate` datetime NULL,
+  PRIMARY KEY (id)
+  );
+```
+
+
 # Usage
 
 ```
